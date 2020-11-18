@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MonstMultiOnClipboard</string>
+    <string name="ui_setting_title_text_before_invite_message">Text to insert before invitation message</string>
+    <string name="ui_setting_title_text_after_invite_message">Text to insert after invitation message</string>
+    <string name="ui_message_monst_app_not_found">Monst app not found in your device</string>
+    <string name="ui_message_invalid_intent">Invalid intent</string>
+    <string name="ui_setting_title_receive_https_intent">Join multiplay directly when click invitation link (https://~)</string>
+    <string name="ui_setting_summary_receive_https_intent">without opening browser app</string>
+    <string name="ui_setting_category_for_device_without_monst_app">For device without Monst app</string>
+    <string name="ui_setting_title_receive_monst_app_intent">Copy invitation link when some app try to open multiplay</string>
+    <string name="ui_setting_summary_receive_monst_app_intent">Only link. Quest name and other things will be omitted</string>
+    <string name="ui_setting_title_developer">Developer</string>
+    <string name="ui_setting_summary_developer" translatable="false">heguro (github.com/heguro)</string>
+    <string name="ui_message_copied">Copied</string>
+    <string name="ui_setting_category_about">About</string>
+    <string name="ui_setting_empty_text_before_after_invite_message">Don\'t insert any text (default)</string>
+    <string name="ui_setting_category_options">Options</string>
+    <string name="ui_setting_title_version">Version</string>
+    <string name="ui_setting_title_oss_licenses">Open source licenses</string>
+    <string name="ui_message_select_app_to_join">Select app to join multiplay</string>
+    <string name="ui_setting_title_shorten_invite_message">Shorten invitation message</string>
+    <string name="ui_setting_label_shorten_invite_message_default">Don\'t modify (default)</string>
+    <string name="ui_setting_label_shorten_invite_message_short">Omit below invitation link</string>
+    <string name="ui_setting_label_shorten_invite_message_url">Only invitation link</string>
+    <string name="ui_setting_title_wait_time_between_start_multiple_app">Wait time between starting multiple app (ms)</string>
+    <string name="ui_setting_summary_wait_time_between_start_multiple_app">Adjust if all some app selected don\'t start</string>
+</resources>

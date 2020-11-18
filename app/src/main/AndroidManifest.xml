@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.heguro.monst_clip"
+        android:installLocation="preferExternal">
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="monsterstrike-app"/>
+        </intent>
+    </queries>
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name="com.heguro.monst_clip.CopyActivity"
+                android:theme="@style/AppThemeTransparent"
+                android:excludeFromRecents="true">
+            <!--
+                android:theme="@style/AppThemeTransparent"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                        android:scheme="line"
+                        android:host="msg"
+                        android:pathPattern=".*https://static.monster-strike.*"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name=".CopyActivityMonstApp" android:targetActivity="com.heguro.monst_clip.CopyActivity" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                        android:scheme="monsterstrike-app"
+                        android:host="joingame"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".CopyActivityHttps" android:targetActivity="com.heguro.monst_clip.CopyActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                        android:scheme="https"
+                        android:host="static.monster-strike.com"
+                        android:pathPrefix="/line/"/>
+            </intent-filter>
+        </activity-alias>
+        <!-- Android 11 requires intent-filter specified in <queries> of Monst app's Manifest -->
+        <activity-alias android:name=".CopyActivityDummy" android:targetActivity="com.heguro.monst_clip.CopyActivity" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="smsto"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.heguro.monst_clip.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.heguro.monst_clip.LicensesActivity"/>
+    </application>
+
+</manifest>

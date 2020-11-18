@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MonstMultiOnClipboard</string>
+    <string name="ui_setting_title_text_before_invite_message">コピー時最初にくっつける文字列</string>
+    <string name="ui_setting_title_text_after_invite_message">コピー時最後にくっつける文字列</string>
+    <string name="ui_message_monst_app_not_found">モンストアプリが見つかりません</string>
+    <string name="ui_message_invalid_intent">対応していないインテントです</string>
+    <string name="ui_setting_title_receive_https_intent">https:// から始まる招待リンクで直接マルチ参加</string>
+    <string name="ui_setting_summary_receive_https_intent">ブラウザーを経由せずに起動できます</string>
+    <string name="ui_setting_category_for_device_without_monst_app">モンストが入っていない端末用の設定</string>
+    <string name="ui_setting_title_receive_monst_app_intent">マルチに参加しようとした時に招待リンクをコピー</string>
+    <string name="ui_setting_summary_receive_monst_app_intent">URL 以外 (クエスト名など) はコピーできません</string>
+    <string name="ui_setting_category_about">このアプリについて</string>
+    <string name="ui_setting_title_developer">開発者</string>
+    <string name="ui_message_copied">コピーしました</string>
+    <string name="ui_setting_empty_text_before_after_invite_message">何もくっつけない (デフォルト)</string>
+    <string name="ui_setting_category_options">設定</string>
+    <string name="ui_setting_title_version">バージョン</string>
+    <string name="ui_setting_title_oss_licenses">オープンソースライセンス</string>
+    <string name="ui_message_select_app_to_join">マルチ参加するアプリを選択</string>
+    <string name="ui_setting_title_shorten_invite_message">コピー時にメッセージの一部を省略</string>
+    <string name="ui_setting_label_shorten_invite_message_default">省略しない</string>
+    <string name="ui_setting_label_shorten_invite_message_short">招待リンク以降を省略</string>
+    <string name="ui_setting_label_shorten_invite_message_url">招待リンクのみ</string>
+    <string name="ui_setting_title_wait_time_between_start_multiple_app">複数アプリを起動する際の待ち時間 (ms)</string>
+    <string name="ui_setting_summary_wait_time_between_start_multiple_app">後に選択したアプリしか立ち上がらない場合は調整してください</string>
+</resources>

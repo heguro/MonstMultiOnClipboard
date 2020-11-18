@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shorted_invite_message_labels">
+        <item>@string/ui_setting_label_shorten_invite_message_default</item>
+        <item>@string/ui_setting_label_shorten_invite_message_short</item>
+        <item>@string/ui_setting_label_shorten_invite_message_url</item>
+    </string-array>
+    <string-array name="shorted_invite_message_values">
+        <item>default</item>
+        <item>short</item>
+        <item>url</item>
+    </string-array>
+</resources>
