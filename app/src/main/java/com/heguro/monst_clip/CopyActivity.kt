@@ -68,7 +68,7 @@ class CopyActivity : AppCompatActivity(), SelectMonstAppFragment.SelectIntentLis
             showToast(getString(R.string.ui_message_monst_app_not_found))
             APP_NOT_FOUND
         } else {
-            if (monstAppIntents.size > 0) { // TODO: 戻す
+            if (monstAppIntents.size > 1) {
                 val selections = monstAppIntents.map { intent ->
                     intent.`package`
                         ?.replace("^\\w{2}\\.\\w{2}\\.\\w{4}\\.".toRegex(), "") ?: ""
@@ -119,8 +119,6 @@ class CopyActivity : AppCompatActivity(), SelectMonstAppFragment.SelectIntentLis
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // val context: Context = this
-        // val settings = SettingsWrapper(context)
         val openedIntent: Intent = intent
         val uri: Uri = openedIntent.data ?: run {
             showToast(getString(R.string.ui_message_invalid_intent))
